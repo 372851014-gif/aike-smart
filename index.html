@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>衡阳爱客智能影音 — 高端家庭影院 · 全屋智能 · 监控安防 一站式解决方案</title>
+<meta name="description" content="衡阳市爱客智能影音商行，专注高端家庭影院、全屋智能家居、监控安防系统。代理宝华韦健B&W、Polk、JBL、海康威视、锐捷等国际品牌，KNX/HomeKit/Matter全生态集成，衡阳本地设计安装一站式服务。">
+<meta name="keywords" content="衡阳智能家居,衡阳家庭影院,衡阳监控安防,宝华韦健,Polk,JBL,海康威视,全屋智能,KNX,HomeKit,爱客智能影音">
+<meta name="author" content="衡阳市爱客智能影音商行">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://372851014-gif.github.io/aike-smart/">
+<meta property="og:title" content="衡阳爱客智能影音 — 高端家庭影院·全屋智能·监控安防">
+<meta property="og:description" content="宝华韦健、Polk、JBL、海康威视等国际品牌授权代理，KNX/HomeKit/Matter全生态集成，衡阳本地一站式服务。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://372851014-gif.github.io/aike-smart/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "衡阳市爱客智能影音商行",
+  "description": "高端家庭影院、全屋智能家居、监控安防系统设计与安装",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "衡阳市",
+    "addressRegion": "湖南省",
+    "addressCountry": "CN"
+  },
+  "telephone": "",
+  "openingHours": "Mo-Su 09:00-18:00",
+  "areaServed": {
+    "@type": "City",
+    "name": "衡阳市"
+  }
+}
+</script>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --bg-card: #111118;
+    --bg-card2: #16161f;
+    --gold: #c8a45c;
+    --gold-light: #d4b76e;
+    --text: #e0e0e0;
+    --text-dim: #909098;
+    --border: #1e1e2a;
+    --accent: #3b7ddd;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+  /* Hero */
+  .hero {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    background: linear-gradient(160deg, #0a0a0f 0%, #0d0d18 40%, #111122 70%, #0a0a0f 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(ellipse at 30% 50%, rgba(200,164,92,0.04) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 30%, rgba(59,125,221,0.03) 0%, transparent 60%);
+    animation: heroGlow 12s ease-in-out infinite alternate;
+  }
+  @keyframes heroGlow {
+    0% { transform: translate(0,0); }
+    100% { transform: translate(20px,-20px); }
+  }
+  .hero-content { position: relative; z-index: 1; }
+  .hero-tag {
+    display: inline-block;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 6px 20px; border-radius: 20px;
+    font-size: 14px; letter-spacing: 2px;
+    margin-bottom: 32px;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #c0c0d0 50%, #c8a45c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero-subtitle {
+    font-size: 18px;
+    color: var(--text-dim);
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+  .hero-cta {
+    display: inline-flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+  }
+  .btn {
+    display: inline-block;
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-size: 16px; font-weight: 600;
+    text-decoration: none;
+    transition: all .3s;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--gold) 0%, #b8923e 100%);
+    color: #000;
+    box-shadow: 0 4px 24px rgba(200,164,92,0.3);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 32px rgba(200,164,92,0.4); }
+  .btn-outline {
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* Section */
+  section { padding: 100px 0; }
+  .section-header { text-align: center; margin-bottom: 60px; }
+  .section-label {
+    color: var(--gold);
+    font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  .section-desc { color: var(--text-dim); max-width: 600px; margin: 0 auto; }
+
+  /* Brands Grid */
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+  }
+  .brand-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px 28px;
+    transition: all .3s;
+    position: relative; overflow: hidden;
+  }
+  .brand-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--accent));
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  .brand-card:hover {
+    border-color: #2a2a3a;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 48px rgba(0,0,0,0.3);
+  }
+  .brand-card:hover::before { opacity: 1; }
+  .brand-icon {
+    width: 48px; height: 48px;
+    background: var(--bg-card2);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .brand-name {
+    font-size: 20px; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .brand-eng { color: var(--text-dim); font-size: 13px; margin-bottom: 12px; }
+  .brand-desc { color: var(--text-dim); font-size: 14px; line-height: 1.7; }
+  .brand-tags {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  .brand-tag {
+    background: var(--bg-card2);
+    color: var(--text-dim);
+    padding: 4px 12px; border-radius: 100px;
+    font-size: 12px;
+  }
+
+  /* Services */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+  }
+  .service-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px 32px;
+    text-align: center;
+    transition: all .3s;
+  }
+  .service-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 8px 40px rgba(200,164,92,0.08);
+  }
+  .service-icon { font-size: 40px; margin-bottom: 20px; }
+  .service-name { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+  .service-desc { color: var(--text-dim); font-size: 14px; }
+
+  /* Process */
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    counter-reset: step;
+  }
+  .process-step {
+    text-align: center;
+    position: relative;
+  }
+  .step-number {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold) 0%, #b8923e 100%);
+    color: #000;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 700;
+    margin: 0 auto 16px;
+  }
+  .step-title { font-size: 17px; font-weight: 600; color: #fff; margin-bottom: 8px; }
+  .step-desc { color: var(--text-dim); font-size: 13px; }
+
+  /* CTA */
+  .cta-section {
+    background: linear-gradient(160deg, #111118 0%, #0d0d18 100%);
+    text-align: center;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .cta-section .section-title { color: #fff; }
+
+  /* Footer */
+  footer {
+    padding: 40px 0;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+  }
+  footer a { color: var(--gold); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  /* Nav */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    background: rgba(10,10,15,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    z-index: 100;
+    padding: 0 20px;
+  }
+  .nav-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .nav-logo { font-weight: 700; font-size: 18px; color: #fff; text-decoration: none; }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a {
+    color: var(--text-dim); text-decoration: none;
+    font-size: 14px; transition: color .3s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  @media (max-width: 768px) {
+    section { padding: 60px 0; }
+    .nav-links { display: none; }
+    .brands-grid, .services-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">爱客智能<span>·影音</span></a>
+    <ul class="nav-links">
+      <li><a href="#brands">代理品牌</a></li>
+      <li><a href="#services">服务范围</a></li>
+      <li><a href="#process">合作流程</a></li>
+      <li><a href="#contact">联系我们</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">衡阳 · 智能影音专家</div>
+    <h1>高端家庭影院<br>全屋智能 · 监控安防</h1>
+    <p class="hero-subtitle">
+      国际一线品牌授权代理，KNX / Apple HomeKit / Matter 全生态集成。<br>
+      从方案设计到安装调试，衡阳本地一站交付。
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">免费获取方案</a>
+      <a href="#brands" class="btn btn-outline">查看品牌</a>
+    </div>
+  </div>
+</section>
+
+<!-- Brands -->
+<section id="brands">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Our Brands</p>
+      <h2 class="section-title">九大品类 · 国际品牌授权代理</h2>
+      <p class="section-desc">只做我们信任的品牌，只推荐经得起时间考验的产品</p>
+    </div>
+
+    <div class="brands-grid">
+
+      <!-- 1. 高端Hi-Fi音响 -->
+      <article class="brand-card">
+        <div class="brand-icon">🎵</div>
+        <h3 class="brand-name">宝华韦健</h3>
+        <p class="brand-eng">Bowers & Wilkins</p>
+        <p class="brand-desc">英国殿堂级音响品牌，800系列钻石高音享誉全球。从书架箱到落地旗舰，为真正爱音乐的人提供纯粹的聆听体验。</p>
+        <div class="brand-tags">
+          <span class="brand-tag">Hi-Fi音响</span>
+          <span class="brand-tag">落地音箱</span>
+          <span class="brand-tag">无线音响</span>
+        </div>
+      </article>
+
+      <!-- 2. 定制安装音响 -->
+      <article class="brand-card">
+        <div class="brand-icon">🔊</div>
+        <h3 class="brand-name">Polk Audio</h3>
+        <p class="brand-eng">普乐之声</p>
+        <p class="brand-desc">美国定制安装音响标杆，入墙/吸顶/户外全场景覆盖。高性价比、声音扎实，是家庭影院和背景音乐系统的黄金选择。</p>
+        <div class="brand-tags">
+          <span class="brand-tag">定制安装</span>
+          <span class="brand-tag">入墙音箱</span>
+          <span class="brand-tag">户外音响</span>
+        </div>
+      </article>
+
+      <!-- 3. 专业/娱乐音频 -->
+      <article class="brand-card">
+        <div class="brand-icon">🎤</div>
+        <h3 class="brand-name">JBL</h3>
+        <p class="brand-eng">JBL Professional</p>
+        <p class="brand-desc">全球专业音频领导者，从舞台演出到家庭娱乐，JBL以震撼音质征服每一双耳朵。KTV、家庭影院、背景音乐全能。</p>
+        <div class="brand-tags">
+          <span class="brand-tag">专业音频</span>
+          <span class="brand-tag">KTV系统</span>
+          <span class="brand-tag">家庭影院</span>
+        </div>
+      </article>
+
+      <!-- 4. 监控安防 -->
+      <article class="brand-card">
+        <div class="brand-icon">📹</div>
+        <h3 class="brand-name">海康威视</h3>
+        <p class="brand-eng">Hikvision</p>
+        <p class="brand-desc">全球安防行业第一品牌，AI智能识别、全彩夜视、人脸门禁一体化。从家庭别墅到商业场所，安全看得见。</p>
+        <div class="brand-tags">
+          <span class="brand-tag">视频监控</span>
+          <span class="brand-tag">人脸门禁</span>
+          <span class="brand-tag">AI安防</span>
+        </div>
+      </article>
+
+      <!-- 5. 全屋网络 -->
+      <article class="brand-card">
+        <div class="brand-icon">🌐</div>
+        <h3 class="brand-name">锐捷网络</h3>
+        <p class="brand-eng">Ruijie</p>
+        <p class="brand-desc">企业级全屋Wi-Fi覆盖方案，AC+AP无缝漫游，别墅大平层信号零死角。为智能家居提供稳定可靠的网络底座。</p>
+        <div class="brand-tags">
+          <span class="brand-tag">全屋Wi-Fi</span>
+          <span class="brand-tag">企业级AP</span>
+          <span class="brand-tag">网络覆盖</span>
+        </div>
+      </article>
+
+      <!-- 6. KNX智能控制 -->
+      <article class="brand-card">
+        <div class="brand-icon">🏠</div>
+        <h3 class="brand-name">KNX 生态</h3>
+        <p class="brand-eng">KNX Standard</p>
+        <p class="brand-desc">全球唯一开放式的智能家居国际标准（ISO/IEC 14543）。灯光、窗帘、暖通、安防全集成，稳定运行30年不过时。</p>
+        <div class="brand-tags">
+          <span class="brand-tag">有线智能</span>
+          <span class="brand-tag">灯光控制</span>
+          <span class="brand-tag">场景联动</span>
+        </div>
+      </article>
+
+      <!-- 7. Apple智能 -->
+      <article class="brand-card">
+        <div class="brand-icon">🍎</div>
+        <h3 class="brand-name">Apple HomeKit</h3>
+        <p class="brand-eng">Apple Smart Home</p>
+        <p class="brand-desc">iPhone/iPad一键控全家，Siri语音、家庭App统一管理。隐私安全、操作直观，苹果用户的首选智能生态。</p>
+        <div class="brand-tags">
+          <span class="brand-tag">Siri语音</span>
+          <span class="brand-tag">家庭App</span>
+          <span class="brand-tag">隐私安全</span>
+        </div>
+      </article>
+
+      <!-- 8. 家庭影院系统 -->
+      <article class="brand-card">
+        <div class="brand-icon">🎬</div>
+        <h3 class="brand-name">家庭影院系统</h3>
+        <p class="brand-eng">Home Cinema</p>
+        <p class="brand-desc">杜比全景声 · DTS:X 沉浸式音效。4K/8K激光投影、透声幕布、声学装修一条龙。把IMAX搬回家。</p>
+        <div class="brand-tags">
+          <span class="brand-tag">杜比全景声</span>
+          <span class="brand-tag">4K投影</span>
+          <span class="brand-tag">声学设计</span>
+        </div>
+      </article>
+
+      <!-- 9. 智能遮阳/灯光 -->
+      <article class="brand-card">
+        <div class="brand-icon">🪟</div>
+        <h3 class="brand-name">智能遮阳 & 灯光</h3>
+        <p class="brand-eng">Motorized Shades & Lighting</p>
+        <p class="brand-desc">杜亚/路创等一线电机，搭配无主灯设计，打造"会思考"的家。日出自动开帘、日落自动亮灯，生活有节奏。</p>
+        <div class="brand-tags">
+          <span class="brand-tag">电动窗帘</span>
+          <span class="brand-tag">无主灯设计</span>
+          <span class="brand-tag">智能调光</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" style="background: var(--bg-card);">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Services</p>
+      <h2 class="section-title">三大核心业务</h2>
+      <p class="section-desc">设计 + 施工 + 调试 · 全程自有团队，不转包</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🎬</div>
+        <h3 class="service-name">高端家庭影院</h3>
+        <p class="service-desc">专业声学设计、杜比全景声布局、4K激光投影校准。从独立影音室到客厅影院，量身定制沉浸式观影体验。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3 class="service-name">全屋智能家居</h3>
+        <p class="service-desc">KNX/HomeKit/Matter多协议融合，灯光、窗帘、空调、新风全场景联动。有线+无线混合方案，稳定第一。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛡️</div>
+        <h3 class="service-name">监控安防系统</h3>
+        <p class="service-desc">海康威视全系列部署，AI人车识别、全彩夜视、远程查看。配合智能门禁和报警联动，安全感拉满。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section id="process">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Process</p>
+      <h2 class="section-title">四步搞定 · 省心交付</h2>
+      <p class="section-desc">从第一次沟通到入住使用，不操心、不踩坑</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-number">1</div>
+        <h4 class="step-title">需求沟通</h4>
+        <p class="step-desc">了解你的生活习惯、预算、户型，给出初步方案方向</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">2</div>
+        <h4 class="step-title">方案设计</h4>
+        <p class="step-desc">CAD点位图 + 设备清单 + 布线规划，精确到每一个面板位置</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">3</div>
+        <h4 class="step-title">施工安装</h4>
+        <p class="step-desc">自有团队进场，弱电布线→设备安装→系统联调，工期可控</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">4</div>
+        <h4 class="step-title">交付培训</h4>
+        <p class="step-desc">一对一教会你使用每个场景，提供终身技术支持</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="cta-section">
+  <div class="container">
+    <p class="section-label">Contact</p>
+    <h2 class="section-title">准备开始你的智能生活？</h2>
+    <p class="section-desc" style="margin-bottom:32px;">
+      不管是新房装修做预埋，还是老房改造加智能，<br>告诉我们你的需求，剩下的交给我们。
+    </p>
+    <div class="hero-cta">
+      <a href="https://github.com/372851014-gif/aike-smart" class="btn btn-primary" target="_blank" rel="noopener">访问 GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>© 2025 衡阳市爱客智能影音商行 | 湖南·衡阳</p>
+    <p style="margin-top:8px;">
+      <a href="https://372851014-gif.github.io/aike-smart/">aike-smart</a> · 
+      高端家庭影院 · 全屋智能 · 监控安防
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
